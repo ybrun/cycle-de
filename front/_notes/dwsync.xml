@@ -12,4 +12,6 @@
 <file name="new_titre_oeuvres.php" server="ftp.dmic-corp.fr/cycle-de/" local="131285280767296491" remote="131039388000000000" Dst="1" />
 <file name="new_type_oeuvres.php" server="ftp.dmic-corp.fr/cycle-de/" local="131285280767916914" remote="131039388000000000" Dst="1" />
 <file name="oeuvres.php" server="ftp.dmic-corp.fr/cycle-de/" local="131285280769834723" remote="131040252000000000" Dst="1" />
+<file name="auteurs.php" server="ftp.dmic-corp.fr/cycle-de/" local="131289680295267462" remote="131289682200000000" Dst="1" />
+<file name="personnages.php" server="ftp.dmic-corp.fr/cycle-de/" local="131289687828496593" remote="131289689400000000" Dst="1" />
 </dwsync>

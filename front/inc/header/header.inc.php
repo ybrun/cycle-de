@@ -31,24 +31,22 @@ if (!isset($_SESSION)) {
   session_start();
 }
 ?>
-<link rel="stylesheet" type="text/css" href="Styles/dmxNavigationMenu.css" />
+<link rel="stylesheet" type="text/css" href="../../../Styles/dmxNavigationMenu.css" />
 <link rel="stylesheet" type="text/css" href="../Styles/dmxNavigationMenu.css" />
 <link rel="stylesheet" type="text/css" href="../../Styles/dmxNavigationMenu.css" />
-<link rel="stylesheet" type="text/css" href="Styles/dmxNavigationMenu/dark_black/dark_black.css" />
+<link rel="stylesheet" type="text/css" href="../../../Styles/dmxNavigationMenu/dark_black/dark_black.css" />
 <link rel="stylesheet" type="text/css" href="../Styles/dmxNavigationMenu/dark_black/dark_black.css" />
 <link rel="stylesheet" type="text/css" href="../../Styles/dmxNavigationMenu/dark_black/dark_black.css" />
-<script type="text/javascript" src="ScriptLibrary/jquery-latest.pack.js"></script>
-<script type="text/javascript" src="../ScriptLibrary/jquery-latest.pack.js"></script>
 <script type="text/javascript" src="../../ScriptLibrary/jquery-latest.pack.js"></script>
-<script type="text/javascript" src="ScriptLibrary/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../../ScriptLibrary/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="../ScriptLibrary/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="../../ScriptLibrary/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="ScriptLibrary/dmxNavigationMenu.js"></script>
+<script type="text/javascript" src="../../../ScriptLibrary/dmxNavigationMenu.js"></script>
 <script type="text/javascript" src="../ScriptLibrary/dmxNavigationMenu.js"></script>
 <script type="text/javascript" src="../../ScriptLibrary/dmxNavigationMenu.js"></script>
-<!--[if lt IE 7]><script type="text/javascript" src="/Styles/IE7.js"></script><![endif]-->
-<!--[if lt IE 7]><script type="text/javascript" src="../Styles/IE7.js"></script><![endif]-->
-<!--[if lt IE 7]><script type="text/javascript" src="../../Styles/IE7.js"></script><![endif]-->
+<!--[if lt IE 7]><script type="text/javascript" src="../../../Styles/IE7.js"></script><![endif]-->
+<!--[if lt IE 7]><script type="text/javascript" src="../../../Styles/IE7.js"></script><![endif]-->
+<!--[if lt IE 7]><script type="text/javascript" src="../../../Styles/IE7.js"></script><![endif]-->
 <style type="text/css">
 .matrix { font-family:Lucida Console, Courier, Monotype; font-size:10pt; text-align:center; width:10px; padding:0px; margin:0px;}
 </style>
@@ -224,7 +222,9 @@ function zoomer(ycol) {
   <div id="menu_user" class="dmxNavigationMenu dark_black">
   <ul class="menu dark_black horizontal">
     <li title="Home"><a href="http://www.cycle-de.fr/front/index.php"><img src="http://www.cycle-de.fr/images/home.png" border="0" alt="Home" />Actualités</a></li>
+    <li title="Auteurs"><a href="http://www.cycle-de.fr/front/auteurs.php"><img src="http://www.cycle-de.fr/images/auteurs.png" border="0" alt="Auteurs" />Auteurs</a></li>
     <li title="Oeuvres"><a href="http://www.cycle-de.fr/front/oeuvres.php"><img src="http://www.cycle-de.fr/images/book.jpg" border="0" alt="Oeuvres" />Oeuvres</a></li>
+    <li title="Personnages"><a href="http://www.cycle-de.fr/front/personnages.php"><img src="http://www.cycle-de.fr/images/personnages.jpg" border="0" alt="Personnages" />Personnages</a></li>
     <li title="Sites Partenaires"><a href="javascript:void(0);" class="expandable"><img src="http://www.cycle-de.fr/images/site_partenaire.jpg" border="0" alt="Sites Partenaires" />Sites Partenaires<span class="sub_down"></span></a>
       <ul class="sub">
         <li title="Editions Web"><a href="javascript:void(0);" class="expandable">Editions Web<span class="sub_right"></span></a>
