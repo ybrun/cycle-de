@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>3en1compteur &#8250; À lire</title>
+
+<style type="text/css">
+html{background:#f9f9f9;}body{background:#fff;color:#333;font-family:sans-serif;margin:2em auto;padding:1em 2em;-webkit-border-radius:3px;border-radius:3px;border:1px solid #dfdfdf;max-width:700px;}a{color:#21759b;text-decoration:none;}a:hover{color:#d54e21;}h1{border-bottom:1px solid #dadada;clear:both;color:#666;font:24px Georgia,"Times New Roman",Times,serif;margin:30px 0 0;padding:0;padding-bottom:7px;}h1 a{font-size:40px;}h2{font-size:16px;}p,li{padding-bottom:2px;font-size:14px;line-height:1.5;}pre{background:#f9f9f9;border:1px dashed #888;line-height:18px;padding:10px;}ul,ol{padding:5px 5px 5px 22px;}a img{border:0;}#logo{margin:6px 0 14px;border-bottom:0;text-align:center;}
+</style>
+</head>
+
+
+<body>
+<h1 id="logo">
+	<a href="http://www.petit-kiwi.com/">3en1Compteur</a>
+	<br />Version 3.0
+</h1>
+<p style="text-align: center">Compteur de visites PHP</p>
+
+<h1>Contenu de l'archive</h1>
+<pre>
+/readme.html (ce fichier)
+/licence.txt (conditions d'utilisation)
+/codes.php (fichier de récupération du code à insérer dans les pages)
+/upload/index.html (fichier statique pour empêcher les accès directs au dossier)
+/upload/install.php (fichier d'installation du compteur)
+/upload/config.inc.php (fichier de configuration du compteur)
+/upload/counter.php (fichier à inclure sur chaque page affichant le compteur)
+</pre>
+
+<h1>Présentation</h1>
+<p>3en1Compteur est un compteur de visites écrit en PHP. Il est simple et sans fioriture. La mise en place se fait en quelques minutes seulement !</p>
+
+
+	<h2>Fonctionnalités de base :</h2>
+	<ul>
+		<li>Affichage du nombre total de visites</li>
+		<li>Affichage du nombre de visites quotidiennes</li>
+		<li>Affichage du nombre de visiteurs en ligne</li>
+	</ul>
+
+	<h2>Autres fonctionnalités :</h2>
+	<ul>
+		<li>Possibilité de définir un nombre de visiteurs initiaux</li>
+		<li>Exclusion d'IPs partielles ou totales</li>
+		<li>Conservation des IPs pendant une période définie par l'utilisateur</li>
+		<li>Définition d'un intervalle de temps pour le nombre de visiteurs en ligne</li>
+		<li>Définition de la période durant laquelle un visiteur est considéré comme unique</li>
+	 </ul>
+
+<h1>Prérequis fonctionnels</h1>
+<ul>
+	<li><a href="http://php.net/">PHP</a> version <strong>5.X.X</strong></li>
+	<li><a href="http://www.mysql.com/">MySQL</a> versions <strong>4.1.13 ou plus récent</strong>, ou <strong>5.0.7 ou plus récent</strong></li>
+</ul>
+
+<h1>Installation</h1>
+<ol>
+	<li>Ouvrez le fichier <em>config.inc.php</em> dans un éditeur de texte. Les paramètres du compteur peuvent être laissés à leurs valeurs par défaut. Sauvegardez le fichier puis fermez-le.
+		<ul>
+			<li>Renseignez tous les champs des paramètres de connexion.</li>
+			<li>Les paramètres du compteur peuvent être laissés à leurs valeurs par défaut.</li>
+			<li>Sauvegardez le fichier puis fermez-le.</li>
+		</ul>
+	</li>
+	<li>Renommez le dossier 'upload' comme il vous plait, par exemple 'compteur'. Uploadez-le, avec tout ce qu'il contient, quelque part sur votre serveur.</li>
+	<li>Depuis votre navigateur, tapez l'adresse pointant vers le fichier <em>install.php</em> du compteur.<br />Exemple : http://www.votresite.com/compteur/install.php.</li>
+	<li>L'installation réussie, copiez le code fourni et collez-le sur toute page utilisant le compteur. Si vous perdez ce code, uploadez le fichier <em>codes.php</em> et pointez votre navigateur vers lui de la même façon que précédemment.</li>
+	<li>Supprimez le fichier <em>install.php</em>, c'est tout !</li>
+</ol>
+
+<h1>FAQ</h1>
+		<h2>Je souhaite récupérer le code à insérer dans mes pages, comment faire ?</h2>
+		<p>Dans l'archive, vous trouverez un fichier <em>codes.php</em>. Uploadez ce fichier dans le répertoire du compteur puis pointez votre navigateur vers lui.</p>
+
+		<h2>J'ai réinstallé le compteur, mais je ne veux pas réinitialiser le total de mes visites, comment faire ?</h2>
+		<p>Dans le fichier <em>config.inc.php</em> changez la valeur du paramètre $initial.</p>
+
+		<h2>Comment connaître les IPs à bloquer ? Et comment les bloquer ?</h2>
+		<p>En vous rendant dans la BDD vous pouvez voir  sur la colonne <em>c_host</em> les hosts correspondants à chaque IP. Vous verrez par exemple que les IPs commençant par 66.249. correspondent au GoogleBot.<br />Vous pouvez alors décider de ne pas les comptabiliser en les ajoutant au paramètre $exclude dans le fichier <em>config.inc.php</em>.</p>
+
+		<h2>Comment puis-je connaître la configuration de mon serveur ?</h2>
+		<p>Créez une page <em>phpinfo.php</em> vers laquelle vous pointerez et insérez-y ce code :</p>
+		<pre>&lt;?php phpinfo(); ?&gt;</pre>
+
+		<h2>Chez OVH, PHP 5 est installé mais c'est PHP 4 qui est activé par défaut. Que faire ?</h2>
+		<p>Dans un fichier <em>.htaccess</em> à la racine de votre site ajoutez cette ligne :</p>
+		<pre>SetEnv PHP_VER 5</pre>
+
+<h1>Changelog</h1>
+<h2>2012-09 • Changements de la version 2.0 à la version 3.0 :</h2>
+<ul>
+	<li>Optimisation de l'ensemble du code</li>
+	<li>Revue de l'installation</li>
+	<li>Réécriture de la documentation</li>
+	<li>Passage en licence Creative Commons</li>
+	<li>Changement d'URL officielle</li>
+</ul>
+<h2>2008-09 • Changements de la version 1.0 à la version 2.0 :</h2>
+<ul>
+	<li>Passage de PHP4 à PHP5</li>
+	<li>Correction et optimisation de l'ensemble du code</li>
+	<li>Processus d'installation revu et corrigé</li>
+	<li>Table MySQL modifiée</li>
+</ul>
+
+<h1>Faites connaître 3en1compteur !</h1>
+<p>Si vous êtes satisfaits de ce compteur, ça serait vraiment sympa de placer un petit lien sur vos pages vers un de ces deux sites :</p>
+<ul>
+	<li>Le site du compteur : <a href="http://www.petit-kiwi.com/">http://www.petit-kiwi.com/</a></li>
+	<li>Le site de l'auteur : <a href="http://www.notoon.com/">http://www.notoon.com/</a></li>
+</ul>
+<p>Merci d'avance :)</p>
+
+<h1>Licence</h1>
+<p><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a href="http://www.petit-kiwi.com">3en1compteur</a></span> de <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.notoon.com" property="cc:attributionName" rel="cc:attributionURL">NotoOn</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr">licence Creative Commons Attribution</a>. Ce qui signifie que vous pouvez copier, modifer et distribuer gratuitement ce script à conditionner de citer l'auteur original et de conserver la même licence.<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />&rarr; voir <a href="licence.txt">licence.txt</a> (en anglais)</p>
+
+</body>
+</html>

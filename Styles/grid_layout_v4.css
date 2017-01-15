@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* Média fluide simple
+   Remarque : un média fluide exige que vous supprimiez les attributs de hauteur et de largeur du média du code HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+/*img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 ne prend pas en charge max-width ; la largeur par défaut est donc fixée à 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propriétés de grille fluide Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	24;
+	dw-gutter-percentage:	25;
+	
+	Inspiré par "Responsive Web Design" par Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	et le système Golden Grid par Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* ----- Disposition mobile : 480px et moins. -----*/
+/* Container */
+.gridContainer {
+	margin: 0 auto;
+	width: 96%;
+	max-width: 480px;
+	height: auto;
+	overflow: auto;
+	z-index: auto;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	clip: rect(auto,auto,auto,auto);
+}
+
+/* Header */
+#LayoutDiv1 {
+	margin-top: 5.21%;
+	margin-left: 2.08%;
+	margin-right: 2.08%;
+	margin-bottom: 5.21%;
+	padding-top: 1.67%;
+	padding-right: 1.67%;
+	padding-bottom: 4.17%;
+	padding-left: 1.67%;
+	display: block;
+}
+
+/* Sidebar1 */
+#LayoutDiv3 {
+	float: left;
+	width: 10%;
+	margin-right: 2.08%;
+	margin-left: 2.08%;
+	padding-top: 1.67%;
+	padding-right: 1.67%;
+	padding-bottom: 4.17%;
+	padding-left: 4.17%;
+	display: block;
+}
+
+/* Content */
+#LayoutDiv4 {
+	float: left;
+	width: 81.8%;
+	padding-top: 1.67%;
+	padding-right: 1.67%;
+	padding-bottom: 4.17%;
+	padding-left: 1.67%;
+	position: relative;
+	z-index: auto;
+	height: auto;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	clip: rect(auto,auto,auto,auto);
+	overflow: hidden;
+	display: block;
+}
+
+
+/* Footer */
+#LayoutDiv6 {
+	float: right;
+	width: 70%;
+	right: 2.08%;
+	height: 10.42%;
+	margin-top: 5.21%;
+	margin-botton: 2.08%;
+	margin-right: 2.08%;
+	margin-bottom: 5.21%;
+	margin-left: 2.08%;
+	padding-top: 1.67%;
+	padding-right: 1.67%;
+	padding-bottom: 4.17%;
+	padding-left: 1.67%;
+	display: block;
+}
+
+/* ----- Disposition tablette : 481px sur 768px. Hérite des styles de : Disposition mobile ----- */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 97.5%;
+	min-width: 481px;
+	max-width: 768px;
+	padding-left: 1.25%;
+	padding-right: 1.25%;
+}
+/* Header */
+#LayoutDiv1 {
+	margin-top: 3.26%;
+	margin-left: 1.30%;
+	margin-right: 1.30%;
+	margin-bottom: 3.26%;
+	padding-top: 1.04%;
+	padding-right: 1.04%;
+	padding-bottom: 2.60%;
+	padding-left: 1.04%;
+}
+
+/* Sidebar1 */
+#LayoutDiv3 {
+	width: 10%;
+	margin-right: 1.30%;
+	margin-left: 1.30%;
+	padding-top: 1.04%;
+	padding-right: 1.04%;
+	padding-bottom: 2.60%;
+	padding-left: 2.60%;
+}
+
+/* Content */
+#LayoutDiv4 {
+	width: 71%;
+	padding-top: 1.04%;
+	padding-right: 1.04%;
+	padding-bottom: 2.60%;
+	padding-left: 1.04%;
+}
+
+
+/* Footer */
+#LayoutDiv6 {
+	right: 1.30%;
+	height: 6.51%;
+	margin-top: 3.26%;
+	margin-botton: 1.30%;
+	margin-right: 1.30%;
+	margin-bottom: 3.26%;
+	margin-left: 1.30%;
+	padding-top: 1.04%;
+	padding-right: 1.04%;
+	padding-bottom: 2.60%;
+	padding-left: 1.04%;
+}
+}
+
+/* ----- Disposition bureau : 769px à max. 1232px.  Hérite des styles de : Disposition mobile et disposition tablette ----- */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 99.1666%;
+	min-width: 769px;
+	max-width: 1232px;
+	padding-left: 0.4166%;
+	padding-right: 0.4166%;
+	margin: auto;
+}
+/* Header */
+#LayoutDiv1 {
+	margin-top: 2.03%;
+	margin-left: 0.81%;
+	margin-right: 0.81%;
+	margin-bottom: 2.03%;
+	padding-top: 0.65%;
+	padding-right: 0.65%;
+	padding-bottom: 1.62%;
+	padding-left: 0.65%;
+}
+
+/* Sidebar1 */
+#LayoutDiv3 {
+	width: 10%;
+	margin-right: 0.81%;
+	margin-left: 0.81%;
+	padding-top: 0.65%;
+	padding-right: 0.65%;
+	padding-bottom: 1.62%;
+	padding-left: 1.62%;
+}
+
+/* Content */
+#LayoutDiv4 {
+	width: 81.8%;
+	padding-top: 0.65%;
+	padding-right: 0.65%;
+	padding-bottom: 1.62%;
+	padding-left: 0.65%;
+}
+
+/* Footer */
+#LayoutDiv6 {
+	right: 0.81%;
+	height: 4.06%;
+	margin-top: 2.03%;
+	margin-botton: 0.81%;
+	margin-right: 0.81%;
+	margin-bottom: 2.03%;
+	margin-left: 0.81%;
+	padding-top: 0.65%;
+	padding-right: 0.65%;
+	padding-bottom: 1.62%;
+	padding-left: 0.65%;
+}
+}
+
+/* ----- Disposition bureau 24'' : 1280 px à max. 1920px. Hérite des styles de : Disposition mobile et disposition tablette. ----- */
+@media only screen and (min-width: 1280px) {
+/* Container */
+.gridContainer {
+	max-width: 1920px;
+	min-width: 1280px;
+}
+
+/* Header */
+#LayoutDiv1 {
+	margin-top: 1.30%;
+	margin-left: 0.52%;
+	margin-right: 0.52%;
+	margin-bottom: 1.30%;
+	padding-top: 0.42%;
+	padding-right: 0.42%;
+	padding-bottom: 1.04%;
+	padding-left: 0.42%;
+}
+
+/* Sidebar1 */
+#LayoutDiv3 {
+	width: 10%;
+	margin-right: 0.52%;
+	margin-left: 0.52%;
+	padding-top: 0.42%;
+	padding-right: 0.42%;
+	padding-bottom: 1.04%;
+	padding-left: 1.04%;
+}
+
+/* Content */
+#LayoutDiv4 {
+	width: 84.7%;
+	padding-top: 0.42%;
+	padding-right: 0.42%;
+	padding-bottom: 1.04%;
+	padding-left: 0.42%;
+}
+
+/* Footer */
+#LayoutDiv6 {
+	right: 0.52%;
+	height: 2.60%;
+	margin-top: 1.30%;
+	margin-botton: 0.52%;
+	margin-right: 0.52%;
+	margin-bottom: 1.30%;
+	margin-left: 0.52%;
+	padding-top: 0.42%;
+	padding-right: 0.42%;
+	padding-bottom: 1.04%;
+	padding-left: 0.42%;
+}

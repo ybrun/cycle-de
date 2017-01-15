@@ -1,0 +1,113 @@
+<?php
+/**
+ * install.php
+ *
+ * @package 3en1compteur
+ * @version 3.0
+ * @author NotoOn (http://www.notoon.com/)
+ * @url http://www.petit-kiwi.com/
+ *
+ * Ce code est publié sous contrat Creative Commons.
+ * Cela signifie que vous pouvez le copier, le modifier, le distribuer gratuitement
+ * à condition de citer l'auteur original et garder cette licence.
+ */
+?>
+<!DOCTYPE html>
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<title>3en1Compteur : Installation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+html{background:#f9f9f9;}body{background:#fff;color:#333;font-family:sans-serif;margin:2em auto;padding:1em 2em;-webkit-border-radius:3px;border-radius:3px;border:1px solid #dfdfdf;max-width:700px;}h1{border-bottom:1px solid #dadada;clear:both;color:#666;font:24px Georgia,"Times New Roman",Times,serif;margin:30px 0 0;padding:0;padding-bottom:7px;}h1 a{font-size:40px;}textarea{background:#f9f9f9;border:1px dashed #888;color:#21759b;font-family:"Courier New", Courier, monospace;padding:10px;width:675px;}#title{color:#21759b;font-size:35px;text-decoration:none;margin:6px 0 14px;border-bottom:0;text-align:center;}
+</style>
+
+</head>
+
+<body>
+<div>
+<?php
+// Chemin absolu
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+// Existence du fichier config.inc.php
+if (file_exists(ABSPATH . 'config.inc.php')) {
+	require_once(ABSPATH . 'config.inc.php');
+
+	$dbc = @mysqli_connect('dmiccorpglde.mysql.db', 'dmiccorpglde', 'Password7', 'dmiccorpglde');
+	if (mysqli_connect_errno()) {
+		die('Impossible de se connecter à la base <em>' . $db_table . '</em>:<br />' . mysqli_connect_error());
+	}
+
+	// Création des tables
+	$qry = "CREATE TABLE $db_table
+		   ( c_id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+			 c_firstvisit DATETIME NOT NULL,
+			 c_lastvisit DATETIME NOT NULL,
+			 c_total INT NOT NULL,
+			 c_ip VARCHAR(40) NOT NULL,
+			 c_host VARCHAR(100) NOT NULL,
+			 PRIMARY KEY (c_id) )";
+	$creation = @mysqli_query($dbc, $qry);
+	if (!$creation) {
+		die( 'Impossible de créer la table ' . $db_table . ' : ' . mysqli_error($dbc) );
+	}
+
+
+	$qry = "INSERT INTO $db_table (c_lastvisit, c_total, c_host) VALUES (CURDATE(), $initial, 'temoin')";
+	$insertion = @mysqli_query($dbc, $qry);
+	if ($insertion) {
+		$abspath = realpath('counter.php');
+
+// code à insérer
+$show = <<<SHOW
+<?php
+include_once('$abspath');
+echo "Total : \$c_alltime <br />";
+echo "Aujourd'hui : \$c_today <br />";
+echo "En ligne : \$c_online";
+?>
+SHOW;
+
+// crédits
+$petitkiwi = <<<PK
+&lt;a href="http://www.petit-kiwi.com/" title="Petit Kiwi"&gt;Petit Kiwi&lt;/a&gt;
+PK;
+
+$notoon = <<<NOTOON
+&lt;a href="http://www.notoon.com/" title="NotoOn"&gt;NotoOn&lt;/a&gt;
+NOTOON;
+?>
+	<h1 id="title">Félicitations,<br />votre compteur est prêt à être utilisé !</h1>
+
+	<h1>1. Insertion du code</h1>
+	<p><label for="show">Copiez-collez ce code dans chaque page affichant le compteur</label>
+	<textarea id="show" rows="7" cols="85" onfocus="this.select()"><?php echo $show; ?></textarea></p>
+
+	<h1>2. Suppression du fichier install.php</h1>
+	<p>Pour des raisons de sécurité, vous devez supprimer le fichier <em>install.php</em>.</p>
+
+	<h1>3. En cas d'oubli</h1>
+	<p>Uploadez le fichier <em>codes.php</em> dans le dossier du compteur, puis pointez votre navigateur vers lui.</p>
+
+	<h1>4. Si vous aimez ce script, un petit lien serait très apprécié</h1>
+	<p><label for="petitkiwi">Lien vers le site du script</label>
+	<textarea id="petitkiwi" rows="2" cols="85" onfocus="this.select()"><?php echo $petitkiwi; ?></textarea></p>
+	<p><label for="notoon">Lien vers le site de l'auteur</label>
+	<textarea id="notoon" rows="2" cols="85" onfocus="this.select()"><?php echo $notoon; ?></textarea></p>
+<?php
+	} else {
+		die( 'Impossible d\'insérer les données initiales : ' . mysqli_error($dbc) );
+	}
+
+	mysqli_close($dbc);
+} else {
+	echo '<strong>Le fichier config.inc.php manque à l\'appel !</strong>';
+	exit();
+}
+?>
+</div>
+</body>
+</html>

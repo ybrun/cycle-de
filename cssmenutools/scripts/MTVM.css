@@ -1,0 +1,14 @@
+.MTVMTeNIBWAwrapper{position:relative;clear:left;z-index:1000;width:162px;height:auto;}
+.MTVMTeNIBWAwrapper ul{list-style-type:none;margin:0px;padding:0px;}
+.MTVMTeNIBWAwrapper a{display:block;text-decoration:none;cursor:pointer;}
+.MTVMTeNIBWAwrapper li div{cursor:default;}
+.MTVMTeNIBWAtop{position:relative;display:block;float:left;width:152px;padding:4px !important;background-color:#A0FFFF;border:1px solid #026493;}
+.MTVMTeNIBWAtop li{margin-top:1px;}
+.MTVMTeNIBWA_DD{z-index:1000;background-color:#0494F2;padding:5px;border:1px solid #026493;}
+.MTVMTeNIBWAitem1{float:left;width:150px;background:#0494F2 none; no-repeat left center;height:30px;border:1px solid #0494F2;}
+.MTVMTeNIBWAitem1 a{display:block;overflow:hidden;width:135px;padding-left:15px;padding-right:0px;height:30px;white-space:nowrap;text-align:left;color:#FFFFFF;text-decoration:none;font:normal normal normal 12px/30px Verdana,Arial,Helvetica,sans-serif;}
+.MTVMTeNIBWAitem1Over{background:#FFFFFF none; no-repeat left center;border:1px solid #0494F2;}
+.MTVMTeNIBWAitem1Over a{color:#0494F2;text-decoration:none;font-style:normal;font-weight:bold;}
+.MTVMTeNIBWAitem1Cur{background:#B5EF49 none; no-repeat left center;border:1px solid #B5EF49;}
+.MTVMTeNIBWAitem1Cur a{color:#000000;text-decoration:none;font-style:normal;font-weight:bold;}
+.MTVMTeNIBWAPreload{position:absolute;left:-10000px;top:-10000px;width:1px;height:1px;visibility:hidden;}

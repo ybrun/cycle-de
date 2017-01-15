@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.dmic-corp.fr/</loc>
+  <changefreq>never</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/index.php</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/apps.php</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/tarifs.php</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/liste_knowbaseitems.php</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/inscription.php</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/connexion.php</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/?pageNum_news=1</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/?pageNum_news=2</loc>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/index.php?pageNum_news=1</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/index.php?pageNum_news=2</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/apps.php?pageNum_apps=1&amp;totalRows_apps=58</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=11</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=13</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=12</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=15</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=8</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=14</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=7</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/knowbaseitems.php?id=9</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/?pageNum_news=0</loc>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/index.php?pageNum_news=0</loc>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/front/apps.php?pageNum_apps=0&amp;totalRows_apps=58</loc>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=N;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=M;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=S;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=D;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/</loc>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/glpidoc-0.85-fr.pdf</loc>
+  <lastmod>2015-02-15T14:41:55+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/php-upload-de-fichiers-889-mwidfs.pdf</loc>
+  <lastmod>2015-03-07T22:28:48+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=N;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=M;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=S;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/procs/?C=D;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=N;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=M;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=S;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=D;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/</loc>
+  <changefreq>never</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=N;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=M;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=S;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/?C=D;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=N;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=M;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=S;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=D;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/glpidoc-0.85-fr.pdf</loc>
+  <lastmod>2015-02-17T15:08:18+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=N;O=A</loc>
+  <changefreq>never</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=M;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=S;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.dmic-corp.fr/download/apps/?C=D;O=D</loc>
+  <changefreq>never</changefreq>
+  <priority>0.26</priority>
+</url>
+</urlset>
