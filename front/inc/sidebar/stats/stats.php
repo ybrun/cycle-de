@@ -98,5 +98,3 @@ echo " $c_today visites aujourd'hui<br />";
 </table>
 </div>
 </div>
-<p></p>
-<iframe frameborder="0" height="450px" width="100%" src="https://fr.ulule.com/sabre-laser/widget.html" scrolling="no"></iframe>
